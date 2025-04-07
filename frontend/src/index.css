@@ -1,0 +1,35 @@
+@import url(<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-asap: "Asap", sans-serif;
+}
+
+@layer base {
+  
+  body {
+    @apply bg-gray-900 text-gray-100;
+  }
+
+  ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#8D99AE] rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#B7BFCD];
+  }
+}
+
+.glass-effect {
+  @apply backdrop-blur-md bg-white/10 border border-white/20;
+}
